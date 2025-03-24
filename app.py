@@ -12,6 +12,7 @@ app.config['MONGO_URI'] = "mongodb://localhost:27017/Flask_data"
 mongo = PyMongo(app)
     
 @app.route('/users', methods=['POST'])
+
 def add_user():
     _json = request.json
     _name = _json['name']
