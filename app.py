@@ -8,6 +8,7 @@ from werkzeug.security import generate_password_hash
 app = Flask(__name__)
 
 app.secret_key = "narendra12++&&"
+
 app.config['MONGO_URI'] = "mongodb://localhost:27017/Flask_data"
 mongo = PyMongo(app)
     
